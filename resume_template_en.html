@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franck CLEMENT - Senior iOS Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+            font-size: 10pt;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .header-left {
+            flex: 1;
+        }
+        
+        .header-left h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+            line-height: 1.1;
+        }
+        
+        .header-left h2 {
+            font-size: 11pt;
+            color: #666;
+            font-weight: normal;
+            margin: 5px 0 0 0;
+            letter-spacing: 2px;
+        }
+        
+        .header-right {
+            text-align: right;
+            font-size: 9pt;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact-item {
+            margin-bottom: 3px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            margin-top: 15px;
+        }
+        
+        .professional-overview {
+            text-align: justify;
+            font-size: 10pt;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .skills-list {
+            font-size: 10pt;
+            line-height: 1.6;
+        }
+        
+        .skills-list ul {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .skills-list li {
+            margin-bottom: 4px;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .job-header {
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #666;
+            font-size: 10pt;
+            margin-bottom: 8px;
+        }
+        
+        .job-description {
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+        
+        .job-description ul {
+            margin: 8px 0;
+            padding-left: 15px;
+        }
+        
+        .job-description li {
+            margin-bottom: 4px;
+        }
+        
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        
+        .education-left {
+            flex: 1;
+        }
+        
+        .education-right {
+            text-align: right;
+            color: #666;
+            font-size: 10pt;
+        }
+        
+        .degree-title {
+            font-weight: bold;
+            font-size: 10pt;
+            margin-bottom: 2px;
+        }
+        
+        .degree-level {
+            color: #666;
+            font-size: 9pt;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0.5in;
+            }
+            
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+            
+            /* Remove default browser headers and footers */
+            @page :first {
+                margin-top: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>FRANCK CLEMENT</h1>
+            <h2>SENIOR iOS DEVELOPER</h2>
+        </div>
+        <div class="header-right">
+            <div class="contact-item">438-794-6689</div>
+            <div class="contact-item">franck.clmnt@gmail.com</div>
+            <div class="contact-item">Montreal, QC, CANADA</div>
+            <div class="contact-item">https://www.linkedin.com/in/franck-clmnt/</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">PROFESSIONAL OVERVIEW</h3>
+        <div class="professional-overview">
+            Senior iOS Developer with 10+ years of experience specializing in high-performance mobile applications for consumer entertainment platforms. Expertise in Swift, SwiftUI, AI integration, and advanced iOS frameworks serving millions of users.
+            <br><br>
+            Extensive background spanning both startup and enterprise environments, from early Swift adoption (2014) through modern iOS development with AI integration. Proven track record in mobile development, native solutions (iOS/tvOS), and scalable architecture design.
+            <br><br>
+            Recent achievements include architecting AI-powered conversational platforms, optimizing applications for 6M users with 99.9% crash-free rates, and managing 659 production releases across 5 major version cycles. Demonstrated expertise in performance engineering, privacy-compliant analytics, and enterprise-grade authentication systems.
+            <br><br>
+            Technical leadership experience in CI/CD automation, solution architecture, and attention to detail. Specialized in combining native iOS excellence with cutting-edge technologies including AI integration, real-time communication, and advanced media processing.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">TECHNICAL SKILLS</h3>
+        <div class="skills-list">
+            <ul>
+                <li>10+ years of iOS development working experience</li>
+                <li>Swift, SwiftUI, Objective-C, Xcode, iOS SDK, tvOS</li>
+                <li>AI Integration (OpenAI Realtime API), gRPC, FFmpeg, Combine Framework, Async/Await</li>
+                <li>Clean Architecture, Architectural patterns (MVVM, Redux, Coordinator), Continuous integration (Xcode Cloud, GitHub Actions)</li>
+                <li>StoreKit 2, OAuth, Firebase Analytics, Crashlytics, Core Data, Realm, URLSession</li>
+                <li>Performance Optimization, Memory Management, Privacy-Compliant Analytics, GDPR Compliance</li>
+                <li>Management, Communication, Agile methods, CI/CD, Fastlane, Git</li>
+                <li>Bilingual: English and French (native)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">WORK EXPERIENCE</h3>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior iOS Developer</div>
+                <div class="company-info">UGROUPMEDIA – PortableNorthPole, Montreal | 2020 – Present</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Led complete iOS ecosystem development for <span class="bold">PortableNorthPole</span>, managing 659 production releases across 5 major version cycles (v7.0.5 → v11.7.0)</li>
+                    <li>Architected and implemented <span class="bold">AI-powered conversational platforms</span> serving 6M users with real-time audio generation and multi-turn context management</li>
+                    <li>Real-time app behavior analysis with Firebase (Crashlytics) to maintain best user experience (<span class="bold">4.8 rated app, 99.9% crash-free rates</span>)</li>
+                    <li>Engineered enterprise-grade subscription platform with multi-provider OAuth, passwordless authentication, and automatic purchase restoration using <span class="bold">StoreKit 2</span></li>
+                    <li>Implemented advanced media processing using <span class="bold">FFmpeg</span> for audio/video optimization, streaming, and real-time playback across iOS/tvOS platforms</li>
+                    <li>Delivered privacy-compliant analytics architecture with intelligent data masking, <span class="bold">GDPR compliance</span>, and comprehensive user behavior tracking</li>
+                    <li>Maintaining connection and communication between Backend and App via protobuf generated classes using <span class="bold">gRPC protocol</span></li>
+                    <li>Established mature <span class="bold">CI/CD pipeline with Xcode Cloud</span> for automated release management and zero-downtime deployments</li>
+                    <li>Collaborating with designers to implement UI/UX components compliant with Apple Human Interface Guidelines, ensuring consistent user experiences</li>
+                    <li>Continuous follow-up on the newest iOS releases and features, early Swift adoption since 2014</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Mobile Development Engineer</div>
+                <div class="company-info">IPPON Technologies, France | 2014 – 2019</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Designed, developed, and maintained mobile applications for diverse client portfolio ranging from showcase apps to complex social platforms</li>
+                    <li>Led full-cycle mobile development including architecture design, implementation, testing, and deployment</li>
+                    <li>Established mobile continuous integration platform ensuring code quality and automated deliverables</li>
+                    <li>Performance optimization of social commerce application achieving <span class="bold">90% connection time improvement</span> for French luxury brand</li>
+                    <li>Complete navigation architecture overhaul from burger menu to tab-based interface with modern UI/UX patterns</li>
+                    <li>Cross-platform development expertise (iOS/Android) and hybrid applications (Ionic, Cordova)</li>
+                    <li>Contributed to business development through technical proposal preparation and client presentations</li>
+                    <li>Mentored development teams and provided technical leadership across multiple concurrent projects</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">EDUCATION</h3>
+        
+        <div class="education-item">
+            <div class="education-left">
+                <div class="degree-title">Master of Science in Computer Science</div>
+                <div class="degree-level">Software Architecture Specialization (ALMA Program)</div>
+            </div>
+            <div class="education-right">
+                Faculty of Sciences, University of Nantes<br>
+                Master's Level | 2012 – 2014
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-left">
+                <div class="degree-title">Bachelor of Science in Computer Science</div>
+            </div>
+            <div class="education-right">
+                Faculty of Sciences, University of Nantes<br>
+                Bachelor's Level | 2011 – 2012
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-left">
+                <div class="degree-title">DUT Computer Science</div>
+            </div>
+            <div class="education-right">
+                University Institute of Technology, Nantes<br>
+                Associate Level | 2008 – 2010
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">PUBLICATIONS & SPEAKING</h3>
+        <div class="job-description">
+            <div style="margin-bottom: 12px;">
+                <div class="job-title">Conference Presentations</div>
+            </div>
+            <ul>
+                <li><strong>Web2Day 2019</strong> (June 2019): Mobile CI: From Developer to App Store in Record Time</li>
+            </ul>
+            
+            <div style="margin: 15px 0 12px 0;">
+                <div class="job-title">Technical Publications</div>
+            </div>
+            <ul>
+                <li><strong>Nov 2018</strong>: RxSwift: How to make your favorite Delegate-based-APIs Reactive</li>
+                <li><strong>Jul 2018</strong>: Industrialization serving Mobile developments</li>
+                <li><strong>Aug 2017</strong>: RxSwift: How to bind a UITableView to a datasource</li>
+                <li><strong>Nov 2015</strong>: Cordova, Grunt, AngularJS: The Ionic stack for hybrid mobile development</li>
+                <li><strong>Nov 2014</strong>: Realm: Data persistence solution for iOS/Android applications</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #e0e0e0; text-align: center; font-size: 9pt; color: #666; font-style: italic;">
+        A comprehensive portfolio of additional projects and technical contributions can be found at: https://franckclement.github.io/resume/en
+    </div>
+</body>
+</html>
