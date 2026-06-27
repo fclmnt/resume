@@ -3,31 +3,31 @@ title: Projets
 contents:
   - name: Portable North Pole (PNP)
     link: https://www.portablenorthpole.com/en
-    client: UGroup Media
+    client: UGroupMedia
     platform: iOS & tvOS
     platform-icon: 📱
-    quote: > 
-      Plateforme de divertissement familiale délivrant des expériences vidéo personnalisées à 6M utilisateurs avec l'objectif de rendre l'expérience magique.
+    quote: >
+      L'application de Noël n°1 de l'App Store : vidéos personnalisées et expériences IA en temps réel pour 6M d'utilisateurs, note de 4,8.
     description: | # this will include new lines to allow paragraphs
-      • **Direction complète développement écosystème iOS** sur 659 releases de production couvrant 5 cycles de versions majeures (v7.0.5 → v11.7.0)
-      • **Architecture plateforme conversationnelle IA** permettant expériences chat personnalisées avec génération audio temps réel et gestion contexte multi-tours
-      • **Ingénierie application haute performance** servant 6M utilisateurs avec 99.9% taux sans crash et gestion mémoire optimisée
-      • **Construction plateforme abonnement niveau entreprise** avec OAuth multi-fournisseurs, authentification sans mot de passe et restauration achats automatique
-      • **Implémentation traitement média avancé** utilisant FFmpeg pour optimisation audio/vidéo, streaming et lecture temps réel iOS/tvOS
-      • **Livraison architecture analytics respectueuse confidentialité** avec masquage intelligent données, conformité GDPR et suivi comportement utilisateur complet
-      • **Établissement pipeline CI/CD mature** avec déploiements zéro-downtime et livraison fonctionnalités systématique via gestion releases automatisée
+      Je dirige le développement iOS de PNP : je suis responsable du client Swift de bout en bout, ainsi que des contrats gRPC et des services LLM Python derrière ses fonctionnalités les plus récentes.
 
-      **Réalisations Techniques Clés:**
-      • Amélioration et optimisation des performances via framework Combine et async/await
-      • Pipeline de contenu généré par IA avec traitement automatique histoiresde bedtime stories et personnalisation
-      • Intégration de SDK Analytics avec contrôles confidentialité personnalisés
-      • Architecture cross-platform supportant expériences iOS grand public et Apple TV
+      **IA temps réel et générative**
+      • Livraison de **Talk to Santa**, une expérience vocale en direct sur l'**API Realtime d'OpenAI** : audio en streaming, contexte multi-tours, et suivi de la consommation de tokens reporté par conversation pour le contrôle des coûts
+      • Conception et mise en production de l'**agent de support IA intégré** : un pipeline **RAG** avec ingénierie de prompts système, évaluation par **LLM-juge** et réponses multilingues adaptées par zone, désormais en ligne sur iOS, web et Android
+      • Évaluation et benchmark de services IA sur toute la stack (Python) : TTS (**ElevenLabs vs Azure**, clonage de voix), génération d'histoires/d'appels avec harnais d'évaluation de contenu, et pré-filtres de modération
 
-      **Reconnaissance Mondiale & Impact:**
-      • **App #1 Santa** sur App Store avec note 4.8 et 6M+ téléchargements
-      • **Mise en avant médias internationaux** incluant TODAY Show, New York Times, Fox News et BuzzFeed
-      • **314+ millions vidéos personnalisées créées** depuis 2008, servant familles du monde entier
-      • **Reconnaissance App of the Day** reçue annuellement au Mexique, France, États-Unis et Canada
+      **Plateforme et qualité iOS**
+      • Migration de l'application vers la **concurrence stricte de Swift 6**, résolution de crashs du compilateur (SIL inliner), et support d'**iOS 26**
+      • Migration de la couche réseau de **grpc-swift v1 à v2** et du **pnp-swift-sdk** partagé ; décomposition des services gRPC monolithiques en services métier avec clés d'idempotence et contrat d'erreur partagé
+      • Ingénierie de la plateforme d'**abonnement** (OAuth multi-fournisseurs, authentification sans mot de passe, restauration automatique des achats) ainsi qu'un flux de **rétention au renouvellement** avant l'annulation native
+      • Traitement audio/vidéo, streaming et lecture temps réel via **FFmpeg** sur iOS/tvOS
+      • Analytics respectueuses de la confidentialité avec masquage des données et conformité GDPR
+
+      **Reconnaissance et portée**
+      • **App de Noël n°1** sur l'App Store, note **4,8**, **6M+** d'utilisateurs
+      • Mise en avant par **TODAY Show, New York Times, Fox News, BuzzFeed**
+      • **314M+** vidéos personnalisées créées depuis 2008
+      • **App of the Day** au Mexique, en France, aux États-Unis et au Canada
 
       <div style="text-align: center; margin: 20px 0;">
         <video autoplay loop muted playsinline style="max-width: 150px; border-radius: 25px; transform: rotate(-15deg); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
@@ -35,41 +35,10 @@ contents:
         </video>
       </div>
 
-      <mark>Swift</mark> <mark>SwiftUI</mark> <mark>Intégration IA</mark> <mark>Combine</mark> <mark>Async/Await</mark> 
-      <mark>FFmpeg</mark> <mark>gRPC</mark> <mark>Firebase Analytics</mark> <mark>OAuth</mark> <mark>StoreKit 2</mark>
-      <mark>Crashlytics</mark> <mark>tvOS</mark> <mark>Architecture Redux</mark> <mark>Optimisation Performance</mark> <mark>CI/CD</mark> <mark>Xcode Cloud</mark>
+      <mark>Swift 6</mark> <mark>SwiftUI</mark> <mark>API Realtime OpenAI</mark> <mark>RAG</mark> <mark>Éval LLM</mark> <mark>Python</mark>
+      <mark>async/await</mark> <mark>Combine</mark> <mark>FFmpeg</mark> <mark>gRPC / protobuf</mark> <mark>StoreKit 2</mark> <mark>OAuth</mark>
+      <mark>Firebase</mark> <mark>tvOS</mark> <mark>Redux</mark> <mark>CI/CD</mark> <mark>Xcode Cloud</mark>
 
-  - name: Metr
-    client: Projet Personnel
-    platform: iOS
-    platform-icon: 📱
-    quote: > 
-      Application de suivi automatisé des trajets professionnels avec détection intelligente de mouvement.
-    description: | # this will include new lines to allow paragraphs
-      • Suivi géolocalisé des trajets avec démarrage/arrêt automatique via geofencing
-      • Reconnaissance d'activité motrice pour différencier voiture, vélo et piéton
-      • Enregistrement manuel pour trajets professionnels ad-hoc
-      • Export hebdomadaire/mensuel avec calculs de frais kilométriques
-      • Traitement en arrière-plan avec notifications locales
-
-      <mark>SwiftUI</mark> <mark>Combine</mark> <mark>CoreData</mark> <mark>CoreLocation</mark> <mark>MapKit</mark> <mark>Redux</mark> <mark>Geofencing</mark> <mark>Motion Activity</mark> 
-      <mark>Local Notification</mark>
-
-  - name: Netw
-    link: https://github.com/franckclement/Netw
-    client: Projet Open Source
-    platform: iOS
-    platform-icon: 📱
-    quote: > 
-      Librairie iOS légère pour l'intégration d'API REST.
-    description: | # this will include new lines to allow paragraphs
-      • Client HTTP basé sur URLSession avec API simplifiée pour services REST
-      • Support uploads multipart/form-data et méthodes HTTP standards
-      • Intégration avec gestionnaires de dépendances populaires (CocoaPods, Carthage)
-      • Couverture de tests complète avec pipeline CI/CD
-
-      <mark>URLSession</mark> <mark>multipart/formdata</mark> <mark>Cocoapods</mark> <mark>Carthage</mark> <mark>Travis CI</mark> <mark>codecov</mark>
-  
   - name: Carpix
     client: BCA Expertise
     platform: iOS & Android
@@ -84,243 +53,67 @@ contents:
       • Sécurité et synchronisation données niveau entreprise
 
       iOS : <mark>Swift</mark> <mark>RxSwift</mark> <mark>MVVM + Coordinator</mark> <mark>PhotoKit</mark> <mark>Realm</mark>
-      <mark>ML Kit</mark> <mark>Fabric</mark> <mark>Firebase</mark> <mark>Fastlane</mark> <mark>Gitlab-CI</mark>  
+      <mark>ML Kit</mark> <mark>Fabric</mark> <mark>Firebase</mark> <mark>Fastlane</mark> <mark>Gitlab-CI</mark>
       Android : <mark>Kotlin</mark> <mark>Android AAC</mark> <mark>Android Jetpack</mark> <mark>Firebase</mark> <mark>Fabric</mark>
       <mark>ML Kit</mark> <mark>Fuel</mark> <mark>Room</mark> <mark>Koin</mark> <mark>LiveData</mark> <mark>Fastlane</mark> <mark>Gitlab-CI</mark>
-  
-  - name: Design Studio (Ds.)
-    client: IPPON Technologies
-    platform: iOS
-    platform-icon: 📱
-    platform-image-path: assets/arkit-icon.png
-    quote: >
-      Application réalité augmentée alimentée par ARKit pour expériences événementielles interactives.
-    description: |
-      • Superposition contenu AR temps réel utilisant technologie reconnaissance d'images
-      • Système gestion événements avec données historiques et à venir
-      • Positionnement dynamique contenu multimédia basé sur détection images référence
-      • Éléments AR interactifs incluant vidéos, boutons et informations contextuelles
-
-      <mark>ARKit</mark> <mark>Image Recognition</mark> 
-
-  - name: Plateforme CI/CD Mobile
-    client: IPPON Technologies
-    platform: DevOps
-    platform-icon: ⚙️
-    quote: >
-      Plateforme intégration continue on-premise niveau entreprise pour applications mobiles.
-    description: | # this will include new lines to allow paragraphs
-      • Conception et implémentation infrastructure CI/CD sécurisée on-premise utilisant ferme build Mac mini
-      • Pipeline automatisé build, test, signature code et déploiement multiplateformes
-      • Support applications natives iOS/Android et hybrides (Ionic, Flutter, React Native)
-      • Conformité sécurité entreprise avec isolation code source client
-      • Présentation solution conférence technique Web2Day 2019
-
-      <mark>Git</mark> <mark>GitLab</mark> <mark>GitLab-CI</mark> <mark>Gitflow</mark> <mark>Fastlane</mark> <mark>Fabric</mark>
-      <mark>TestFlight</mark> <mark>AppStore</mark> <mark>Playstore</mark>
 
   - name: Fashion Community
     client: Marque Luxe Française
     platform: iOS
     platform-icon: 📱
     quote: >
-      Optimisation performance et refonte UX d'application commerce social atteignant 90% d'amélioration temps connexion.
+      Optimisation des performances et refonte UX d'une application de commerce social, réduisant le temps de connexion à froid de 90%.
     description: | # this will include new lines to allow paragraphs
-      • Optimisation performance application réduisant temps connexion de 90%
-      • Refonte complète architecture navigation du menu burger vers interface tab
-      • Refonte UI/UX et implémentation patterns interface modernes
-      • Fonctionnalités engagement utilisateur améliorées incluant bookmarks et organisation contenu
-      • Fonctionnalité commerce social avec gestion contenu généré utilisateurs
+      • Réduction du temps de connexion de l'application de 90% via profilage et optimisation des performances
+      • Refonte complète de l'architecture de navigation du menu burger vers une interface à onglets
+      • Refonte UI/UX et implémentation de patterns d'interface modernes
+      • Fonctionnalités d'engagement utilisateur améliorées incluant favoris et organisation du contenu
+      • Fonctionnalité de commerce social avec gestion du contenu généré par les utilisateurs
 
       <mark>Swift</mark> <mark>RxSwift</mark> <mark>MVVM + Coordinator</mark> <mark>Auto Layout</mark> <mark>URL Scheme</mark>
 
-  - name: AssurOnLine
-    client: AssurOne Group
+  - name: Plateforme CI/CD Mobile
+    client: IPPON Technologies
+    platform: DevOps
+    platform-icon: ⚙️
+    quote: >
+      Plateforme d'intégration continue on-premise niveau entreprise pour applications mobiles. Présentée à Web2Day 2019.
+    description: | # this will include new lines to allow paragraphs
+      • Conception et implémentation d'une infrastructure CI/CD sécurisée on-premise utilisant une ferme de build Mac mini
+      • Pipeline automatisé de build, test, signature de code et déploiement multiplateformes
+      • Support des applications natives iOS/Android et hybrides (Ionic, Flutter, React Native)
+      • Conformité sécurité entreprise avec isolation du code source client
+      • Présentation de la solution à la conférence technique Web2Day 2019
+
+      <mark>Git</mark> <mark>GitLab</mark> <mark>GitLab-CI</mark> <mark>Gitflow</mark> <mark>Fastlane</mark> <mark>Fabric</mark>
+      <mark>TestFlight</mark> <mark>AppStore</mark> <mark>Playstore</mark>
+
+  - name: Metr
+    client: Projet Personnel
     platform: iOS
     platform-icon: 📱
     quote: >
-      Refonte application mobile AssurOnLine avec migration technologique et ajout fonctionnalités métier.
+      Application de suivi automatisé des trajets professionnels avec détection intelligente de mouvement.
     description: | # this will include new lines to allow paragraphs
-      • Migration technologique complète Objective-C vers Swift 3
-      • Implémentation tunnel contractualisation devis avec workflow utilisateur optimisé
-      • Développement module déclaration et suivi sinistres en temps réel
-      • Refonte graphique complète avec design system moderne
-      • Architecture MVVM + Coordinator pour maintenabilité code
+      • Suivi géolocalisé des trajets avec démarrage/arrêt automatique via geofencing
+      • Reconnaissance d'activité motrice pour différencier voiture, vélo et piéton
+      • Enregistrement manuel pour trajets professionnels ad-hoc
+      • Export hebdomadaire/mensuel avec calculs de frais kilométriques
+      • Traitement en arrière-plan avec notifications locales
 
-      <mark>Swift</mark> <mark>RxSwift</mark> <mark>MVVM + Coordinator</mark> <mark>Auto Layout</mark>
+      <mark>SwiftUI</mark> <mark>Combine</mark> <mark>CoreData</mark> <mark>CoreLocation</mark> <mark>MapKit</mark> <mark>Redux</mark> <mark>Geofencing</mark> <mark>Motion Activity</mark>
+      <mark>Local Notification</mark>
 
-  - name: AssurOnLine - Volkswagen
-    client: AssurOne Group
-    platform: iOS
-    platform-icon: 📱
+  - name: grpc-swift (contribution open source)
+    link: https://github.com/grpc/grpc-swift/pull/1107
+    client: Open Source (grpc/grpc-swift)
+    platform: Swift / Serveur
+    platform-icon: 🌐
     quote: >
-      Solution marque blanche multi-targets pour marques automobiles du groupe Volkswagen.
+      Contribution fusionnée à grpc-swift, la librairie gRPC officielle de l'écosystème Swift.
     description: | # this will include new lines to allow paragraphs
-      • Transformation application en base marque blanche modulaire
-      • Système thématisation dynamique pour marques automobiles (VW, Audi, Skoda, Seat)
-      • Architecture multi-targets avec code fonctionnel partagé optimisé
-      • Gestion centralisée assets et configurations par marque
-      • Déploiement automatisé versions spécifiques par brand
+      • Conception et fusion de la PR #1107 ajoutant le support de NIOSSLCustomVerificationCallback pour les connexions client
+      • Activation de la vérification personnalisée des certificats TLS pour les clients gRPC (ex. certificate pinning)
+      • Fusionnée dans grpc/grpc-swift en janvier 2021 (80 ajouts sur 5 fichiers)
 
-      <mark>Objective-C</mark> <mark>Xcode</mark> <mark>CocoaPods</mark> <mark>Multi-Targets</mark>
-
-  - name: Saisie des prospects
-    client: Casden
-    platform: Hybride
-    platform-icon: 📱
-    quote: >
-      Réalisation d'une application de prospection à destination d'iPads avec Ionic
-    description: | # this will include new lines to allow paragraphs
-      L'application propose un formulaire de contact à destination des agents CASDEN dans les salons pour démarcher des prospects. Les salons n'étant pas toujours couverts par un accès
-      internet, l'application se charge de sauvegarder de manière sécurisée ces informations sur la tablette, et de synchroniser les fiches prospects avec le réseau CASDEN lorsqu'il est disponible.
-
-
-      <mark>Cordova</mark> <mark>Ionic</mark> <mark>AngularJS</mark> <mark>PouchDB</mark>
-
-  - name: SITA GAMA
-    client: Suez
-    platform: Android
-    platform-icon: 📱
-    quote: >
-      Application Android de gestion déchargement déchets amiantés avec digitalisation processus industriel.
-    description: | # this will include new lines to allow paragraphs
-      • Digitalisation complète processus déchargement remplaçant workflow papier
-      • Interface double affichage : vue plan camion et liste conditionnements
-      • Intégration balance industrielle via communication Bluetooth RFCOMM
-      • Pesée automatique avec transmission temps réel vers SI Suez
-      • Module gestion anomalies avec documentation photographique
-      • Conformité réglementaire environnementale et traçabilité
-
-      <mark>Android</mark> <mark>Android Studio</mark> <mark>Bluetooth</mark> <mark>RFCOMM</mark> <mark>Runtime Permissions</mark>
-
-  - name: Docasden
-    client: Casden
-    platform: Hybride
-    platform-icon: 📱
-    quote: >
-      Extension application simulation prêts avec module upload documents justificatifs.
-    description: | # this will include new lines to allow paragraphs
-      • Développement module upload documents client sécurisé
-      • Capture photo intégrée avec optimisation qualité/taille fichiers
-      • Import galerie avec validation format et compression automatique
-      • Interface utilisateur intuitive pour gestion pièces justificatives
-      • Transmission sécurisée vers backend avec chiffrement
-
-      <mark>Cordova</mark> <mark>Ionic</mark> <mark>AngularJS</mark> <mark>Upload de fichiers</mark>
-
-  - name: Interface de monitoring
-    client: Marque Luxe Française
-    platform: Web
-    platform-icon: 🖥
-    quote: >
-      Dashboard monitoring temps réel pour librairie iOS déployée en points de vente.
-    description: | # this will include new lines to allow paragraphs
-      • Interface web temps réel pour monitoring événements iOS en magasins
-      • Système détection anomalies automatique avec alertes
-      • Dashboard analytique avec métriques performance et usage
-      • Filtrage avancé et recherche multi-critères dans logs
-      • Interface responsive optimisée pour monitoring opérationnel
-
-      <mark>AngularJS</mark> <mark>HTML 5</mark> <mark>Smart-Table</mark>
-
-  - name: DBL - Framework
-    client: Marque Luxe Française
-    platform: iOS
-    platform-icon: 📱
-    quote: >
-      Framework iOS distribué pour synchronisation contenu produits en points de vente iPad.
-    description: | # this will include new lines to allow paragraphs
-      • Framework iOS réutilisable compatible iOS 7+ avec architecture modulaire
-      • Synchronisation automatique collections produits via polling régulier
-      • Gestion cycle vie ressources avec téléchargement, extraction et nettoyage
-      • Exécution arrière-plan avec ordonnancement tâches via GCD
-      • Logging complet actions avec transmission vers SI client
-      • Intégration transparente dans applications boutique existantes
-
-      <mark>Dynamic Framework</mark> <mark>Objective-C</mark> <mark>Xcode</mark> <mark>Grand Central Dispatch (GCD)</mark>
-
-  - name: Simulation de prêts
-    client: Casden
-    platform: Hybride
-    platform-icon: 📱
-    quote: >
-      Application hybride simulation crédit avec modules marketing et géolocalisation agences.
-    description: | # this will include new lines to allow paragraphs
-      • Moteur simulation multi-produits crédit avec paramétrage avancé
-      • Module vitrine marketing intégré avec contenu dynamique
-      • Interface client pour simulation personnalisée en temps réel
-      • Cartographie interactive agences avec géolocalisation utilisateur
-      • Architecture hybride optimisée pour déploiement multi-plateformes
-
-      <mark>Cordova</mark> <mark>Ionic</mark> <mark>AngularJS</mark>
-
-  - name: Mobile Test Harness
-    client: HID Global
-    platform-icon: 📱
-    platform: iOS
-    quote: >
-      Outil test automatique iOS pour validation complète SDK Transactionnel HID Global.
-    description: | # this will include new lines to allow paragraphs
-      • Conception architecture test automatique avec moteur scénarios XML
-      • Interpréteur actions dynamique couvrant 100% points entrée SDK
-      • Validation XSD scénarios avec parsing/mapping XML avancé
-      • Architecture multi-threading robuste pour tests concurrents
-      • Compatibilité étendue iOS 5 à 8.2 avec gestion versions
-      • Intégration notifications push pour retours tests temps réel
-
-      <mark>Xcode</mark> <mark>Objective-C</mark> <mark>CocoaPods</mark> <mark>Notifications Push</mark> <mark>GCD</mark>
-
-  - name: Watchabox
-    client: Watchabox
-    platform-icon: ⌚️
-    platform: Android Wear
-    quote: >
-      Collection cadrans Android Wear personnalisés avec fonctionnalités interactives avancées.
-    description: | # this will include new lines to allow paragraphs
-      • Développement collection 10+ cadrans Android Wear personnalisés
-      • Optimisation interface circulaire pour Motorola 360 et montres rondes
-      • Implémentation fonctionnalités interactives : chronomètre, rotation couronnes
-      • Design adaptatif numérique/analogique selon préférences utilisateur
-      • Optimisation performance et autonomie pour dispositifs Wear
-
-      <mark>Android</mark> <mark>Android Studio</mark> <mark>Android Wear</mark>
-
-  - name: ExpertPass
-    client: Conseil Supérieur de l'Ordre des Experts-Comptables
-    platform-icon: 📱
-    platform: iOS
-    quote: >
-      Carte d'identité professionnelle numérique certifiée pour experts-comptables avec système notifications
-      et partage.
-    description: | # this will include new lines to allow paragraphs
-      • Développement système notifications push typées avec traitement payload spécialisé
-      • Implémentation module partage messages courts style micro-blogging
-      • Architecture notification sélective selon profil utilisateur (Expert, Stagiaire, Permanent)
-      • Interface utilisateur optimisée pour consultation identité professionnelle mobile
-
-      <mark>Objective-C</mark> <mark>Xcode</mark> <mark>CocoaPods</mark> <mark>Notification Push</mark>
-
-  - name: ENBRIN
-    client: EDF
-    platform-icon: 📱
-    platform: iOS
-    quote: >
-      Application iPad de consultation documentation technique pour partenaires EDF Bretagne Innovation.
-    description: | # this will include new lines to allow paragraphs
-      • Développement complet application gestion et visualisation documentation PDF marketing
-      • Synchronisation automatique contenu via services REST authentifiés SI EDF
-      • Mode consultation optimisé pour sessions prospection terrain
-      • Interface administration sécurisée avec authentification partenaire
-      • Architecture simple et robuste pour consultation hors-ligne
-
-      <mark>Objective-C</mark> <mark>Xcode</mark> <mark>CocoaPods</mark> <mark>REST</mark>
-  
-
-# - name: Carpix
-#     client: client name
-#     link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-#     github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
-#     quote: >
-#       Short overview of the project (optional)
-#     description: | # this will include new lines to allow paragraphs
-#       Description about the work on/with the project
+      <mark>Swift</mark> <mark>gRPC</mark> <mark>SwiftNIO</mark> <mark>NIOSSL</mark> <mark>TLS</mark> <mark>Open Source</mark>

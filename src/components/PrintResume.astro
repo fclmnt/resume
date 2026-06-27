@@ -1,0 +1,99 @@
+---
+import { getResume, UI, SKILLS, type Lang } from '../lib/data';
+import { renderPrint, extractTags } from '../lib/markdown';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = UI[lang];
+const { header, about, experience, education, projects, more } = getResume(lang);
+const base = import.meta.env.BASE_URL;
+const techLabel = lang === 'fr' ? 'Technologies' : 'Tech';
+---
+
+<div class="screen-bar">
+  <button onclick="window.print()">🖨 {t.downloadPdf}</button>
+  <a href={`${base}${lang}/`}>← {t.viewWeb}</a>
+</div>
+
+<div class="page">
+  <header class="p-header">
+    <div>
+      <h1 class="p-name">{header.name}</h1>
+      <p class="p-title">{header.title}</p>
+    </div>
+    <div class="p-contact">
+      {header.location && <div>{header.location}</div>}
+      {header.phones && header.phones.map((p: string) => <div>{p.replace(/[^\d+() -]/g, '').trim()}</div>)}
+      <div><a href={`mailto:${header.email}`}>{header.email}</a></div>
+      {header.linkedin_username && <div>linkedin.com/in/{header.linkedin_username}</div>}
+      {header.github_username && <div>github.com/{header.github_username}</div>}
+    </div>
+  </header>
+
+  <section class="p-section">
+    <h2>{t.summary}</h2>
+    <div class="p-summary" set:html={renderPrint(about.content)} />
+  </section>
+
+  <section class="p-section">
+    <h2>{t.experience}</h2>
+    {experience.contents.map((job: any) => (
+      <div class="p-entry">
+        <div class="p-entry-head">
+          <p class="p-entry-title">{job.job_title}, <span class="p-entry-sub">{job.company}</span></p>
+          <span class="p-entry-meta">{job.dates}</span>
+        </div>
+        <div class="p-entry-body" set:html={renderPrint(job.description)} />
+      </div>
+    ))}
+  </section>
+
+  <section class="p-section">
+    <h2>{t.skills}</h2>
+    <div class="p-skills">
+      {SKILLS[lang].map((s) => (
+        <div><span class="g">{s.group}:</span> {s.items}</div>
+      ))}
+    </div>
+  </section>
+
+  <section class="p-section">
+    <h2>{t.projects}</h2>
+    {projects.contents.map((proj: any) => {
+      const tags = extractTags(proj.description);
+      return (
+        <div class="p-entry">
+          <div class="p-entry-head">
+            <p class="p-entry-title">{proj.name}, <span class="p-entry-sub">{proj.client}{proj.platform ? `, ${proj.platform}` : ''}</span></p>
+          </div>
+          {proj.quote && <div class="p-entry-body"><p>{proj.quote}</p></div>}
+          {tags.length > 0 && <div class="p-entry-body"><p><strong>{techLabel}:</strong> {tags.join(', ')}</p></div>}
+        </div>
+      );
+    })}
+  </section>
+
+  <section class="p-section">
+    <h2>{t.education}</h2>
+    {education.contents.map((e: any) => (
+      <div class="p-edu">
+        <div>
+          <span class="d">{e.name}</span>
+          {e.description && <span class="q">, {e.description.replace(/\n/g, ' ').trim()}</span>}
+          <div class="q">{e.qualification}</div>
+        </div>
+        <div class="r">{e.dates}</div>
+      </div>
+    ))}
+  </section>
+
+  <section class="p-section">
+    <h2>{t.publications}</h2>
+    <div class="p-entry-body" set:html={renderPrint(more.content)} />
+  </section>
+
+  <div class="p-foot">
+    {lang === 'fr'
+      ? 'Portfolio complet et version en ligne : fclmnt.github.io/resume'
+      : 'Full portfolio and online version: fclmnt.github.io/resume'}
+  </div>
+</div>

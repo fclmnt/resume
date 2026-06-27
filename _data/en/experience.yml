@@ -1,19 +1,19 @@
 # Experience template
 title: Experience
 contents:
-  - company: UGroup Media
+  - company: UGroupMedia
     link: https://www.ugroupmedia.com/
     job_title: Senior iOS Developer
     dates: January 2020 - Present
     quote: >
-      Family entertainment technology company delivering magical personalized video experiences to millions of users worldwide.
+      Family entertainment company behind Portable North Pole, the App Store's #1 Santa app, with 6M users worldwide.
     description: | # this will include new lines to allow paragraphs
-      Led complete iOS ecosystem development for Portable North Pole, architecting and implementing AI-powered conversational platforms serving 6M users.
-      Managed 659 production releases across 5 major version cycles (v7.0.5 → v11.7.0) with 99.9% crash-free rates and zero-downtime deployments.
-      Engineered enterprise-grade subscription platform with multi-provider OAuth, passwordless authentication, and automatic purchase restoration.
-      Implemented advanced media processing using FFmpeg for audio/video optimization, streaming, and real-time playback across iOS/tvOS platforms.
-      Delivered privacy-compliant analytics architecture with intelligent data masking, GDPR compliance, and comprehensive user behavior tracking.
-      Established mature CI/CD pipeline with systematic feature delivery through automated release management and continuous integration practices.
+      Lead iOS for Portable North Pole (6M users, 4.8 rating), owning the Swift client plus the gRPC contracts and Python LLM services behind its newest features.
+      Shipped Talk to Santa, a real-time voice experience on OpenAI's Realtime API, with per-conversation token and cost accounting.
+      Built and shipped the in-app AI support agent (RAG pipeline, system-prompt engineering, LLM-as-judge evaluation), now live across iOS, web, and Android.
+      Migrated the app to Swift 6 strict concurrency and iOS 26, and the networking layer from grpc-swift v1 to v2.
+      Engineered the subscription platform (multi-provider OAuth, passwordless auth, automatic purchase restoration) and auto-renewal retention flows.
+      Advanced media processing with FFmpeg across iOS/tvOS; privacy-compliant, GDPR-aligned analytics.
 
   - company: IPPON Technologies
     link: https://en.ippon.tech/

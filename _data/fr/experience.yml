@@ -1,19 +1,19 @@
 # Experience template
 title: Expérience Professionnelle
 contents:
-  - company: UGroup Media
+  - company: UGroupMedia
     link: https://www.ugroupmedia.com/
     job_title: Développeur iOS Senior
     dates: Janvier 2020 - Présent
     quote: >
-      Entreprise technologique de divertissement familial délivrant des expériences vidéo personnalisées magiques à des millions d'utilisateurs dans le monde.
+      Entreprise de divertissement familial derrière Portable North Pole, l'application de Noël n°1 de l'App Store, avec 6M d'utilisateurs dans le monde.
     description: | # this will include new lines to allow paragraphs
-      Direction complète du développement écosystème iOS pour Portable North Pole, architecture et implémentation de plateformes conversationnelles IA servant 6M utilisateurs.
-      Gestion de 659 releases de production sur 5 cycles de versions majeures (v7.0.5 → v11.7.0) avec 99.9% taux sans crash et déploiements zéro-downtime.
-      Ingénierie plateforme abonnement niveau entreprise avec OAuth multi-fournisseurs, authentification sans mot de passe et restauration achats automatique.
-      Implémentation traitement média avancé utilisant FFmpeg pour optimisation audio/vidéo, streaming et lecture temps réel sur plateformes iOS/tvOS.
-      Livraison architecture analytics respectueuse confidentialité avec masquage intelligent données, conformité GDPR et suivi comportement utilisateur complet.
-      Établissement pipeline CI/CD mature avec livraison fonctionnalités systématique via gestion releases automatisée et pratiques intégration continue.
+      Direction du développement iOS de Portable North Pole (6M d'utilisateurs, note de 4,8) : responsable du client Swift ainsi que des contrats gRPC et des services LLM Python derrière ses fonctionnalités les plus récentes.
+      Livraison de Talk to Santa, une expérience vocale en temps réel sur l'API Realtime d'OpenAI, avec suivi de la consommation de tokens et des coûts par conversation.
+      Conception et mise en production de l'agent de support IA intégré (pipeline RAG, ingénierie de prompts système, évaluation par LLM-juge), désormais en ligne sur iOS, web et Android.
+      Migration de l'application vers la concurrence stricte de Swift 6 et iOS 26, et de la couche réseau de grpc-swift v1 à v2.
+      Ingénierie de la plateforme d'abonnement (OAuth multi-fournisseurs, authentification sans mot de passe, restauration automatique des achats) et des flux de rétention au renouvellement.
+      Traitement média avancé avec FFmpeg sur iOS/tvOS ; analytics respectueuses de la confidentialité et conformes au GDPR.
 
   - company: IPPON Technologies
     link: https://fr.ippon.tech/

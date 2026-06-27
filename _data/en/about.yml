@@ -1,12 +1,6 @@
 # About Template
-title : Professional Summary
+title : Summary
 content : |
-  Senior iOS Developer with 10+ years of experience specializing in high-performance mobile applications for consumer entertainment platforms. Expertise in Swift, SwiftUI, AI integration, and advanced iOS frameworks serving millions of users.
-
-  Extensive background spanning both startup and enterprise environments, from early Swift adoption (2014) through modern iOS development with AI integration. Proven track record in mobile development, native solutions (iOS/tvOS), and scalable architecture design.
-
-  Recent achievements include architecting AI-powered conversational platforms, optimizing applications for 6M users with 99.9% crash-free rates, and managing 659 production releases across 5 major version cycles. Demonstrated expertise in performance engineering, privacy-compliant analytics, and enterprise-grade authentication systems.
-
-  Technical leadership experience in CI/CD automation, solution architecture, and attention to detail. Specialized in combining native iOS excellence with cutting-edge technologies including AI integration, real-time communication, and advanced media processing.
+  I've spent 12 years building iOS apps, the last six on Portable North Pole, the App Store's #1 Santa app, with 6M users and a 4.8 rating. This past year I shipped Talk to Santa, a real-time voice experience on OpenAI's Realtime API, and built the RAG support agent that now answers users in-app across iOS, web, and Android.
 
 profile_image: assets/profile.jpg

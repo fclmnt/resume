@@ -1,12 +1,6 @@
 # About Template
-title : Profil Professionnel
+title : Profil
 content : |
-  Développeur iOS Senior avec plus de 10 ans d'expérience spécialisé dans les applications mobiles haute performance pour plateformes de divertissement grand public. Expertise en Swift, SwiftUI, intégration IA et frameworks iOS avancés servant des millions d'utilisateurs.
-
-  Parcours étendu couvrant environnements startup et entreprise, de l'adoption précoce de Swift (2014) au développement iOS moderne avec intégration IA. Expertise avérée en développement mobile, solutions multiplateformes (iOS/tvOS) et conception d'architecture évolutive.
-
-  Réalisations récentes incluant l'architecture de plateformes conversationnelles IA, l'optimisation d'applications pour 6M utilisateurs avec 99.9% de taux sans crash, et la gestion de 659 releases de production sur 5 cycles de versions majeures. Expertise démontrée en ingénierie performance, analytics respectueuses de la confidentialité et systèmes d'authentification enterprise.
-
-  Expérience en leadership technique incluant automatisation CI/CD, architecture de solutions et une attention particulère aux détails. Spécialisé dans l'alliance entre excellence iOS native et technologies de pointe incluant intégration IA, communication temps réel et traitement média avancé.
+  Je conçois des applications iOS depuis 12 ans, les six dernières sur Portable North Pole, l'application de Noël n°1 de l'App Store, avec 6M d'utilisateurs et une note de 4,8. Cette année, j'ai livré Talk to Santa, une expérience vocale en temps réel bâtie sur l'API Realtime d'OpenAI, et développé l'agent de support RAG qui répond désormais aux utilisateurs dans l'application, sur iOS, web et Android.
 
 profile_image: assets/profile.jpg

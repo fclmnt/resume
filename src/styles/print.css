@@ -1,0 +1,82 @@
+/* ATS-safe, single-column, selectable text. Black on white, standard fonts.
+   Used by the /print routes and the generated PDFs. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.2pt;
+  line-height: 1.42;
+}
+
+.page {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.55in 0.6in;
+}
+
+/* Header */
+.p-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 14px; }
+.p-name { font-size: 23pt; font-weight: 800; letter-spacing: -0.01em; margin: 0; line-height: 1.05; }
+.p-title { font-size: 11pt; color: #333; margin: 3px 0 0; letter-spacing: 0.04em; text-transform: uppercase; }
+.p-contact { text-align: right; font-size: 8.8pt; color: #444; line-height: 1.6; }
+.p-contact a { color: #444; text-decoration: none; }
+
+/* Sections */
+.p-section { margin-bottom: 14px; }
+.p-section h2 {
+  font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.09em;
+  border-bottom: 1.5px solid #222; padding-bottom: 3px; margin: 0 0 9px; color: #111;
+}
+.p-summary { font-size: 10.2pt; line-height: 1.5; }
+.p-summary p { margin: 0 0 6px; }
+
+.p-entry { margin-bottom: 11px; page-break-inside: avoid; }
+.p-entry-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.p-entry-title { font-weight: 700; font-size: 10.6pt; margin: 0; }
+.p-entry-sub { font-style: italic; color: #444; font-size: 9.6pt; }
+.p-entry-meta { font-size: 9.2pt; color: #555; white-space: nowrap; }
+.p-entry-body { margin-top: 3px; }
+.p-entry-body p { margin: 3px 0; }
+.p-entry-body ul { margin: 3px 0; padding-left: 16px; }
+.p-entry-body li { margin-bottom: 2px; }
+.p-entry-body h1, .p-entry-body h2, .p-entry-body h3, .p-entry-body h4 {
+  font-size: 9pt; text-transform: none; letter-spacing: 0; border: 0;
+  margin: 6px 0 2px; color: #000; padding: 0;
+}
+
+.p-skills { font-size: 9.8pt; }
+.p-skills div { margin-bottom: 3px; }
+.p-skills .g { font-weight: 700; }
+
+.p-edu { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 5px; }
+.p-edu .d { font-weight: 700; font-size: 9.8pt; }
+.p-edu .q { color: #555; font-size: 9pt; }
+.p-edu .r { text-align: right; color: #555; font-size: 9pt; white-space: nowrap; }
+
+.p-foot { margin-top: 14px; padding-top: 8px; border-top: 1px solid #ddd; text-align: center; font-size: 8.4pt; color: #777; }
+
+@media screen {
+  body { background: #525659; padding: 24px 0; }
+  .page { background: #fff; box-shadow: 0 2px 16px rgba(0,0,0,0.4); }
+  .screen-bar {
+    max-width: 8.5in; margin: 0 auto 16px; display: flex; gap: 10px; justify-content: flex-end;
+    font-family: -apple-system, Arial, sans-serif;
+  }
+  .screen-bar a, .screen-bar button {
+    font-size: 13px; padding: 8px 14px; border-radius: 8px; border: 1px solid #777;
+    background: #fff; color: #222; cursor: pointer; text-decoration: none;
+  }
+  .screen-bar a:hover, .screen-bar button:hover { background: #eee; }
+}
+
+@media print {
+  .screen-bar { display: none !important; }
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; padding: 0.5in 0.55in; }
+  @page { size: letter; margin: 0.5in; }
+  a { color: #1a1a1a; }
+}
