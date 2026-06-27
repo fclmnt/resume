@@ -2,7 +2,7 @@
 title: Publications & Conférences
 content: | # this will include new lines to allow paragraphs
   **Présentations Conférences**
-  - **Web2Day 2019** (Juin 2019) : <img src="assets/yt-logo.png" class="youtube-logo"/> [CI Mobile : du développeur à l'appstore en un temps record](https://www.youtube.com/watch?v=tFTG_yeg8gc)
+  - **Web2Day 2019** (Juin 2019) : <img src="assets/youtube.svg" class="youtube-logo" alt="YouTube"/> [CI Mobile : du développeur à l'appstore en un temps record](https://www.youtube.com/watch?v=tFTG_yeg8gc)
 
   **Publications Techniques**
   - **Nov 2018** : [RxSwift: How to make your favorite Delegate-based-APIs Reactive](https://blog.ippon.fr/2018/11/13/rxswift-how-to-make-your-favorite-delegate-based-apis-reactive/)

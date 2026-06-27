@@ -1,0 +1,20 @@
+{
+  "name": "franck-clement-resume",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pdf": "node scripts/export-pdf.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.13.0",
+    "marked": "^14.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-yaml": "^4.1.2",
+    "playwright": "^1.48.0"
+  }
+}

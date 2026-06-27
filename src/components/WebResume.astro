@@ -1,0 +1,123 @@
+---
+import { getResume, UI, SKILLS, type Lang } from '../lib/data';
+import { renderWeb, renderWebBody, renderPrint, extractTags } from '../lib/markdown';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = UI[lang];
+const { header, about, experience, education, projects, more } = getResume(lang);
+const base = import.meta.env.BASE_URL;
+const printHref = `${base}${lang}/print/`;
+const otherHref = `${base}${t.otherLangPath}/`;
+---
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <img class="avatar" src={`${base}assets/profile.jpg`} alt={header.name} />
+      <h1 class="name">{header.name}</h1>
+      <p class="title">{header.title}</p>
+      {header.location && <p class="location">{header.location}</p>}
+
+      <ul class="contact">
+        <li><span class="ic">✉</span><a href={`mailto:${header.email}`}>{header.email}</a></li>
+        {header.phones && header.phones.map((p: string) => (
+          <li><span class="ic">☎</span><span>{p}</span></li>
+        ))}
+        {header.linkedin_username && (
+          <li><span class="ic">in</span><a href={`https://www.linkedin.com/in/${header.linkedin_username}/`} target="_blank" rel="noopener">linkedin.com/in/{header.linkedin_username}</a></li>
+        )}
+        {header.github_username && (
+          <li><span class="ic">gh</span><a href={`https://github.com/${header.github_username}`} target="_blank" rel="noopener">github.com/{header.github_username}</a></li>
+        )}
+      </ul>
+
+      <div class="actions">
+        <a class="btn btn-primary" href={printHref}>↓ {t.downloadPdf}</a>
+        <a class="btn" href={otherHref}>🌐 {t.otherLang}</a>
+      </div>
+
+      <div class="skills-block">
+        <h3>{t.skills}</h3>
+        {SKILLS[lang].map((s) => (
+          <div class="skill-group">
+            <div class="g">{s.group}</div>
+            <div class="i">{s.items}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section id="summary">
+      <div class="section-head"><h2>{t.summary}</h2></div>
+      <div class="summary" set:html={renderWeb(about.content)} />
+    </section>
+
+    <section id="experience">
+      <div class="section-head"><h2>{t.experience}</h2></div>
+      {experience.contents.map((job: any) => (
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3 class="entry-title">{job.job_title}</h3>
+              <p class="entry-sub">{job.link ? <a href={job.link} target="_blank" rel="noopener">{job.company}</a> : job.company}</p>
+            </div>
+            <span class="entry-meta">{job.dates}</span>
+          </div>
+          {job.quote && <p class="entry-quote">{job.quote}</p>}
+          <div class="entry-body" set:html={renderWeb(job.description)} />
+        </article>
+      ))}
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><h2>{t.projects}</h2></div>
+      {projects.contents.map((proj: any) => {
+        const tags = extractTags(proj.description);
+        return (
+          <article class="entry">
+            <div class="entry-head">
+              <div>
+                <h3 class="entry-title">{proj['platform-icon']} {proj.link ? <a href={proj.link} target="_blank" rel="noopener">{proj.name}</a> : proj.name}</h3>
+                <p class="entry-sub">{proj.client}{proj.platform ? ` · ${proj.platform}` : ''}</p>
+              </div>
+            </div>
+            {proj.quote && <p class="entry-quote">{proj.quote}</p>}
+            <div class="entry-body" set:html={renderWebBody(proj.description)} />
+            {tags.length > 0 && (
+              <div class="tags">{tags.map((tag) => <span class="tag">{tag}</span>)}</div>
+            )}
+          </article>
+        );
+      })}
+    </section>
+
+    <section id="education">
+      <div class="section-head"><h2>{t.education}</h2></div>
+      <div class="edu-grid">
+        {education.contents.map((e: any) => (
+          <article class="entry">
+            <div class="entry-head">
+              <div>
+                <h3 class="entry-title">{e.name}</h3>
+                <p class="entry-sub">{e.qualification}</p>
+                {e.description && <div class="entry-body" set:html={renderWeb(e.description)} />}
+              </div>
+              <span class="entry-meta">{e.dates}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="publications" class="pub">
+      <div class="section-head"><h2>{t.publications}</h2></div>
+      <div class="entry pub-body" set:html={renderWeb(more.content)} />
+    </section>
+  </main>
+</div>
+
+<footer class="site">
+  © {header.name} · <a href={otherHref}>{t.otherLang}</a> · <a href={printHref}>{t.downloadPdf}</a>
+</footer>
