@@ -130,7 +130,7 @@ section { margin-bottom: 44px; }
   font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--accent); margin: 16px 0 6px;
 }
-.entry-body video { display: block; margin: 16px auto; }
+.entry-body video { display: block; margin: 16px 0; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
 .tag {
