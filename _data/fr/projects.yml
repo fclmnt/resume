@@ -30,7 +30,7 @@ contents:
       • **App of the Day** au Mexique, en France, aux États-Unis et au Canada
 
       <div style="text-align: center; margin: 20px 0;">
-        <video autoplay loop muted playsinline style="max-width: 150px; border-radius: 25px; transform: rotate(-15deg); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <video autoplay loop muted playsinline style="max-width: 150px; border-radius: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
           <source src="assets/videos/app_of_the_day.mp4" type="video/mp4">
         </video>
       </div>

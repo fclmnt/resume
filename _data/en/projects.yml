@@ -27,10 +27,10 @@ contents:
       • **#1 Santa App** on the App Store, **4.8** rating, **6M+** users
       • Featured by **TODAY Show, New York Times, Fox News, BuzzFeed**
       • **314M+** personalized videos created since 2008
-      • **App of the Day** in Mexico, France, the United States, and Canada
+      • **App of the Day** in Mexico, France, United States, and Canada
 
       <div style="text-align: center; margin: 20px 0;">
-        <video autoplay loop muted playsinline style="max-width: 150px; border-radius: 25px; transform: rotate(-15deg); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <video autoplay loop muted playsinline style="max-width: 150px; border-radius: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
           <source src="assets/videos/app_of_the_day.mp4" type="video/mp4">
         </video>
       </div>
