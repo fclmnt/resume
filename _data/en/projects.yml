@@ -14,12 +14,15 @@ contents:
       **Real-time & generative AI**
       • Shipped **Talk to Santa**, a live voice experience on **OpenAI's Realtime API**: streamed audio, multi-turn context, and token-accurate usage reported per conversation for cost control
       • Built and shipped the **in-app AI support agent** to production: a **RAG** pipeline with system-prompt engineering, **LLM-as-judge** scoring, and multilingual, zone-aware responses, now live across iOS, web, and Android
+      • Hardened the support agent through iterative audits of live conversations, deterministic output guardrails, and a model migration, measurably improving conversation quality
       • Evaluated and benchmarked AI services across the stack (Python): TTS (**ElevenLabs vs Azure**, voice cloning), story/call generation with content-evaluation harnesses, and content moderation pre-filters
 
       **iOS platform & quality**
       • Migrated the app to **Swift 6 strict concurrency**, resolving compiler (SIL inliner) crashes, and shipped **iOS 26** support
       • Migrated the networking layer from **grpc-swift v1 to v2** and the shared **pnp-swift-sdk**; decomposed monolithic gRPC services into domain-specific ones with idempotency keys and a shared error contract
       • Engineered the **subscription** platform (multi-provider OAuth, passwordless auth, automatic purchase restoration) plus an **auto-renewal retention** flow before native cancellation
+      • Diagnosed and fixed a cluster of production crashes (rendering, orientation, support-chat overlay) and raised iOS unit-test coverage from under 10% to over 70%
+      • Built an automated video-regression harness (frame-level **SSIM/PSNR** diffing) to validate a major render-pipeline migration end to end, and fixed crashes and memory leaks in the underlying **FFmpeg/MLT** engine
       • **FFmpeg**-based audio/video processing, streaming, and real-time playback across iOS/tvOS
       • Privacy-compliant analytics with data masking and GDPR compliance
 
@@ -37,7 +40,7 @@ contents:
 
       <mark>Swift 6</mark> <mark>SwiftUI</mark> <mark>OpenAI Realtime API</mark> <mark>RAG</mark> <mark>LLM Eval</mark> <mark>Python</mark>
       <mark>async/await</mark> <mark>Combine</mark> <mark>FFmpeg</mark> <mark>gRPC / protobuf</mark> <mark>StoreKit 2</mark> <mark>OAuth</mark>
-      <mark>Firebase</mark> <mark>tvOS</mark> <mark>Redux</mark> <mark>CI/CD</mark> <mark>Xcode Cloud</mark>
+      <mark>Firebase</mark> <mark>tvOS</mark> <mark>Redux</mark> <mark>CI/CD</mark> <mark>Xcode Cloud</mark> <mark>Test Automation</mark> <mark>XCTest</mark>
 
   - name: Carpix
     client: BCA Expertise

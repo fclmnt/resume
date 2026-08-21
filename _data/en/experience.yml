@@ -4,16 +4,17 @@ contents:
   - company: UGroupMedia
     link: https://www.ugroupmedia.com/
     job_title: Senior iOS Developer
-    dates: January 2020 - Present
+    dates: January 2020 - August 2026
     quote: >
       Family entertainment company behind Portable North Pole, the App Store's #1 Santa app, with 6M users worldwide.
     description: | # this will include new lines to allow paragraphs
       Lead iOS for Portable North Pole (6M users, 4.8 rating), owning the Swift client plus the gRPC contracts and Python LLM services behind its newest features.
       Shipped Talk to Santa, a real-time voice experience on OpenAI's Realtime API, with per-conversation token and cost accounting.
-      Built and shipped the in-app AI support agent (RAG pipeline, system-prompt engineering, LLM-as-judge evaluation), now live across iOS, web, and Android.
+      Built and hardened the in-app AI support agent (RAG pipeline, system-prompt engineering, LLM-as-judge evaluation) through iterative live-conversation audits and a model migration, now live across iOS, web, and Android.
       Migrated the app to Swift 6 strict concurrency and iOS 26, and the networking layer from grpc-swift v1 to v2.
-      Engineered the subscription platform (multi-provider OAuth, passwordless auth, automatic purchase restoration) and auto-renewal retention flows.
-      Advanced media processing with FFmpeg across iOS/tvOS; privacy-compliant, GDPR-aligned analytics.
+      Drove a stability push across the render, orientation, and support-chat paths, fixing production crashes and raising iOS unit-test coverage from under 10% to over 70%.
+      Built an automated video-regression harness (frame-level SSIM/PSNR diffing) to validate a major render-pipeline migration, and fixed crashes and memory leaks in the underlying FFmpeg/MLT engine.
+      Engineered the subscription platform (multi-provider OAuth, passwordless auth, automatic purchase restoration) and auto-renewal retention flows, with privacy-compliant, GDPR-aligned analytics.
 
   - company: IPPON Technologies
     link: https://en.ippon.tech/

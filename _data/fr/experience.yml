@@ -4,16 +4,17 @@ contents:
   - company: UGroupMedia
     link: https://www.ugroupmedia.com/
     job_title: Développeur iOS Senior
-    dates: Janvier 2020 - Présent
+    dates: Janvier 2020 - Août 2026
     quote: >
       Entreprise de divertissement familial derrière Portable North Pole, l'application de Noël n°1 de l'App Store, avec 6M d'utilisateurs dans le monde.
     description: | # this will include new lines to allow paragraphs
       Direction du développement iOS de Portable North Pole (6M d'utilisateurs, note de 4,8) : responsable du client Swift ainsi que des contrats gRPC et des services LLM Python derrière ses fonctionnalités les plus récentes.
       Livraison de Talk to Santa, une expérience vocale en temps réel sur l'API Realtime d'OpenAI, avec suivi de la consommation de tokens et des coûts par conversation.
-      Conception et mise en production de l'agent de support IA intégré (pipeline RAG, ingénierie de prompts système, évaluation par LLM-juge), désormais en ligne sur iOS, web et Android.
+      Conception et renforcement de l'agent de support IA intégré (pipeline RAG, ingénierie de prompts système, évaluation par LLM-juge) via des audits itératifs de conversations réelles et une migration de modèle, désormais en ligne sur iOS, web et Android.
       Migration de l'application vers la concurrence stricte de Swift 6 et iOS 26, et de la couche réseau de grpc-swift v1 à v2.
-      Ingénierie de la plateforme d'abonnement (OAuth multi-fournisseurs, authentification sans mot de passe, restauration automatique des achats) et des flux de rétention au renouvellement.
-      Traitement média avancé avec FFmpeg sur iOS/tvOS ; analytics respectueuses de la confidentialité et conformes au GDPR.
+      Pilotage d'un effort de stabilisation sur le rendu, l'orientation et le support-chat : correction de crashs en production et augmentation de la couverture de tests iOS de moins de 10 % à plus de 70 %.
+      Développement d'un harnais de non-régression vidéo automatisé (comparaison SSIM/PSNR image par image) pour valider une migration majeure du moteur de rendu, et correction de crashs et fuites mémoire dans le moteur FFmpeg/MLT sous-jacent.
+      Ingénierie de la plateforme d'abonnement (OAuth multi-fournisseurs, authentification sans mot de passe, restauration automatique des achats) et des flux de rétention au renouvellement, avec des analytics respectueuses de la confidentialité et conformes au GDPR.
 
   - company: IPPON Technologies
     link: https://fr.ippon.tech/
